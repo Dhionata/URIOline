@@ -12,6 +12,7 @@ fun main() {
         println("N[$it] = ${vetor[it]}")
     }
 }
+
 /*
 Faça um programa que leia um vetor N[20]. Troque
 a seguir, o primeiro elemento com o último, o segundo
