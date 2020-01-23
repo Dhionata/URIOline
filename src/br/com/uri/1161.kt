@@ -1,16 +1,22 @@
 package br.com.uri
 
-import java.io.BufferedReader
-import java.io.InputStreamReader
+import java.util.*
 
-
-fun main() {
-    val br = BufferedReader(InputStreamReader(System.`in`))
-    var linha: String
-
-    while (br.readLine().also { linha = it } != null) {
-        val n = linha.toInt()
+fun main(args: Array<String>) {
+    val entrada = Scanner(System.`in`)
+    while (entrada.hasNext()) {
+        val n = entrada.nextInt()
+        val m = entrada.nextInt()
+        println(fatorial(n) + fatorial(m))
     }
+}
+
+fun fatorial(x: Int): Long {
+    var fatorial: Long = 1
+    for (i in 1..x) {
+        fatorial *= i
+    }
+    return fatorial
 }
 
 /*
