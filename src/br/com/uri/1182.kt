@@ -1,6 +1,6 @@
 package br.com.uri
 
-fun main(args: Array<String>) {
+fun main() {
     val matriz = Array(12) { DoubleArray(12) }
     val coluna = readLine()!!.toInt()
     val operacao = readLine()

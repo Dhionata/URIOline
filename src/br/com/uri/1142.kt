@@ -1,9 +1,12 @@
 package br.com.uri
 
-fun main() {
-    val n = 0 until ((readLine() ?: return).toInt())
+import java.util.*
+
+fun main(args: Array<String>) {
+    val entrada = Scanner(System.`in`)
+    val n = entrada.nextInt()
     var x = 1
-    repeat(n.count()) {
+    for (i in 0 until n) {
         println("$x ${x + 1} ${x + 2} PUM")
         x += 4
     }

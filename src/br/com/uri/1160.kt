@@ -1,6 +1,6 @@
 package br.com.uri
 
-fun main(args: Array<String>) {
+fun main() {
     //número de casos
     val t = readLine()!!.toInt()
     repeat(t) {

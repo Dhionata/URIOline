@@ -1,14 +1,12 @@
 package br.com.uri
 
-fun main() {
+fun main(args: Array<String>) {
     var x = readLine()!!.toInt()
     val vetor = IntArray(10)
     vetor.indices.forEach {
         vetor[it] = x
-        x *= 2
-    }
-    vetor.indices.forEach {
         println("N[${it}] = ${vetor[it]}")
+        x *= 2
     }
 }
 /*

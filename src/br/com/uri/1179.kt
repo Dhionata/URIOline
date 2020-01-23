@@ -2,7 +2,7 @@ package br.com.uri
 
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
     val entrada = Scanner(System.`in`)
     val vetorPar = IntArray(5)
     val vetorImpar = IntArray(5)

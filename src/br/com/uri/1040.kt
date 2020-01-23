@@ -1,13 +1,15 @@
 package br.com.uri
 
-fun main() {
-    val n1 = (readLine() ?: return).toFloat()
-    val n2 = (readLine() ?: return).toFloat()
-    val n3 = (readLine() ?: return).toFloat()
-    val n4 = (readLine() ?: return).toFloat()
+import java.util.*
 
-    var media: Float = (n1 * 2 + n2 * 3 + n3 * 4 + n4 * 1) / (2 + 3 + 4 + 1)
-    //val mediaFormatada = "%.1f".format(media)
+fun main(args: Array<String>) {
+    val entrada = Scanner(System.`in`)
+    val n1 = entrada.nextFloat()
+    val n2 = entrada.nextFloat()
+    val n3 = entrada.nextFloat()
+    val n4 = entrada.nextFloat()
+
+    var media: Float = (n1 * 2 + n2 * 3 + n3 * 4 + n4 * 1) / 10
     println("Media: ${"%.1f".format(media)}")
     when {
         media >= 7 -> {
@@ -18,7 +20,7 @@ fun main() {
         }
         else -> {
             println("Aluno em exame.")
-            val exame = (readLine() ?: return).toFloat()
+            val exame = entrada.nextFloat()
             println("Nota do exame: ${"%.1f".format(exame)}")
             media = (media + exame) / 2
             if (media >= 5) {
@@ -26,7 +28,7 @@ fun main() {
             } else {
                 println("Aluno reprovado")
             }
-            print("Media final: ${"%.1f".format(media)}")
+            println("Media final: ${"%.1f".format(media)}")
         }
     }
 }
