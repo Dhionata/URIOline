@@ -1,6 +1,6 @@
 package br.com.uri
 
-import java.util.*
+import java.util.Scanner
 
 fun main() {
     val scan = Scanner(System.`in`)
