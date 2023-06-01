@@ -14,6 +14,7 @@ fun main() {
             x -> {
                 println("$x eh perfeito")
             }
+
             else -> {
                 println("$x nao eh perfeito")
             }

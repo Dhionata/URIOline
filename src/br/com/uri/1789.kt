@@ -1,6 +1,6 @@
 package br.com.uri
 
-import java.util.Scanner
+import java.util.*
 import kotlin.math.max
 
 fun main(args: Array<String>) {
@@ -13,8 +13,10 @@ fun main(args: Array<String>) {
             max2 = when {
                 lesmasVelocidades < 10 ->
                     max(max2, 1)
+
                 lesmasVelocidades < 20 ->
                     max(max2, 2)
+
                 else ->
                     max(max2, 3)
             }

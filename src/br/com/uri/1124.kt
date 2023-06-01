@@ -1,25 +1,36 @@
 package br.com.uri
 
-import java.util.Scanner
+import kotlin.math.pow
+import kotlin.math.sqrt
 
-fun main() {
-    val entrada = Scanner(System.`in`)
-    do {
-        val l1 = entrada.nextInt()
-        val l2 = entrada.nextInt()
-        val c1 = entrada.nextInt()
-        val c2 = entrada.nextInt()
-        val perL = c1 * 6.28 + c2 + 6.28
-        val perC = c1 * 2 + c2 * 2
+fun main(args: Array<String>) {
+    while (true) {
+        val input = readLine()!!.split(" ").map { it.toInt() }
+        val l = input[0]
+        val c = input[1]
+        val r1 = input[2]
+        val r2 = input[3]
 
-        if (l1 == 0 && l2 == 0 && c1 == 0 && c2 == 0) break
-        if (perL > perC) {
-            println("S")
-        } else {
-            println("N")
+        if (l == 0 && c == 0 && r1 == 0 && r2 == 0) {
+            return
         }
-    } while (l1 != 0 && l2 != 0 && c1 != 0 && c2 != 0)
+
+        var saida = 'N'
+
+        val maior = if (r1 > r2) r1 + r1 else r2 + r2
+
+        if (maior <= l && maior <= c) {
+            val distanciaCentros = sqrt((l - r2 - r1).toDouble().pow(2) + (c - r2 - r1).toDouble().pow(2))
+            if (distanciaCentros >= r1 + r2) {
+                saida = 'S'
+            }
+        }
+
+        println(saida)
+    }
 }
+
+
 /*FCC (Fábrica de Cilindros de Carbono) fabrica vários tipos de cilindros de carbono.
 A FCC está instalada no décimo andar de um prédio, e utiliza os vários elevadores do
 prédio para transportar os cilindros. Por questão de segurança, os cilindros devem ser

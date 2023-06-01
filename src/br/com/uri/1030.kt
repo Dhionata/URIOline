@@ -6,6 +6,7 @@ import java.util.*
 object Main {
     private var `in`: FastScanner = FastScanner(System.`in`)
     private var out = PrintWriter(System.out)
+
     @Throws(IOException::class)
     @JvmStatic
 
@@ -39,6 +40,7 @@ object Main {
     class FastScanner(input: InputStream?) : Closeable {
         private val reader: BufferedReader = BufferedReader(InputStreamReader(input))
         private var tokenizer: StringTokenizer?
+
         @Throws(IOException::class)
         operator fun next(): String? {
             while (tokenizer == null || !(tokenizer ?: return null).hasMoreTokens()) {

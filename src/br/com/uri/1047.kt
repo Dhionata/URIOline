@@ -10,24 +10,34 @@ fun main(args: Array<String>) {
     val horaFinal = entrada.nextInt()
     val minutoFinal = entrada.nextInt()
 
-    var horasTotais = when {
-        horaFinal > horaInicial -> horaFinal - horaInicial
-        horaFinal == horaInicial -> 24
-        else -> (24 - horaInicial) + horaFinal
-    }
+    var horasTotais = 0
+    var minutosTotais = 0
 
-    val minutosTotais: Int
+    if (horaFinal == horaInicial && minutoFinal == minutoInicial) {
+        horasTotais = 24
+    } else {
+        if (horaFinal > horaInicial || (horaFinal == horaInicial && minutoFinal > minutoInicial)) {
+            horasTotais = horaFinal - horaInicial
+            minutosTotais = minutoFinal - minutoInicial
+        } else {
+            horasTotais = 24 - (horaInicial - horaFinal)
+            minutosTotais = minutoFinal - minutoInicial
+        }
 
-    when {
-        minutoFinal > minutoInicial -> minutosTotais = minutoFinal - minutoInicial
-        minutoFinal == minutoInicial -> minutosTotais = 0
-        else -> {
-            minutosTotais = (60 - minutoInicial) + minutoFinal
+        if (minutosTotais < 0) {
+            minutosTotais += 60
             horasTotais -= 1
         }
+
+        if (horasTotais < 0) {
+            horasTotais += 24
+        }
     }
+
     println("O JOGO DUROU $horasTotais HORA(S) E $minutosTotais MINUTO(S)")
 }
+
+
 
 /*Leia a hora inicial, minuto inicial, hora final e minuto final de um jogo. A seguir calcule a duração do jogo.
 

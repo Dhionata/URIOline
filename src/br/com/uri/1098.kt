@@ -10,16 +10,19 @@ fun main() {
                 println("I=${i.toInt()} J=${(j + 1).toInt()}")
                 println("I=${i.toInt()} J=${(j + 2).toInt()}")
             }
+
             i >= 1.9 -> {
                 println("I=2 J=${j.toInt()}")
                 println("I=2 J=${(j + 1).toInt()}")
                 println("I=2 J=${(j + 2).toInt()}")
             }
+
             i == 1.0 -> {
                 println("I=${i.toInt()} J=2")
                 println("I=${i.toInt()} J=${(j + 1).toInt()}")
                 println("I=${i.toInt()} J=${(j + 2).toInt()}")
             }
+
             else -> {
                 println("I=${"%.1f".format(i)} J=${"%.1f".format(j)}")
                 println("I=${"%.1f".format(i)} J=${"%.1f".format(j + 1)}")

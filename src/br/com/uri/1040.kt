@@ -15,9 +15,11 @@ fun main(args: Array<String>) {
         media >= 7 -> {
             println("Aluno aprovado.")
         }
+
         media < 5 -> {
             println("Aluno reprovado.")
         }
+
         else -> {
             println("Aluno em exame.")
             val exame = entrada.nextFloat()

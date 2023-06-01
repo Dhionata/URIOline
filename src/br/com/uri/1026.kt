@@ -1,5 +1,17 @@
 package br.com.uri
 
+fun main(args: Array<String>) {
+    while (true) {
+        try {
+            val input = readLine() ?: break
+            val (a, b) = input.trim().split(' ').map { it.toInt() }
+
+            println(a xor b)
+        } catch (e: Exception) {
+            break
+        }
+    }
+}
 
 /*
 6+9=15 parece ok. Mas como pode estar certo 4+6=2?
@@ -35,8 +47,8 @@ eparado por um único espaço. A entrada termina com EOF.
 
 Saída
 Para cada linha de entrada, o programa deverá fornecer
-uma linha de saída, que é o valor após somar doi
- números no modo “Mofiz”.
+uma linha de saída, que é o valor após somar dois
+números no modo “Mofiz”.
 
 Exemplo de Entrada	Exemplo de Saída
 4 6

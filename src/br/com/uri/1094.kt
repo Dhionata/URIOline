@@ -25,9 +25,11 @@ fun main() {
             "C" -> {
                 totalC += x
             }
+
             "R" -> {
                 totalR += x
             }
+
             "S" -> {
                 totalS += x
             }

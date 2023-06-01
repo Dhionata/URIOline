@@ -1,6 +1,6 @@
 package br.com.uri
 
-import java.util.Scanner
+import java.util.*
 
 fun main() {
     val scan = Scanner(System.`in`)
@@ -28,14 +28,17 @@ fun main() {
                 nf = n1 * d2 + n2 * d1
                 df = d1 * d2
             }
+
             "-" -> {
                 nf = n1 * d2 - n2 * d1
                 df = d1 * d2
             }
+
             "*" -> {
                 nf = n1 * n2
                 df = d1 * d2
             }
+
             "/" -> {
                 nf = n1 * d2
                 df = n2 * d1
