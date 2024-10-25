@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 fun main() {
     val x = (readLine() ?: return).toInt()

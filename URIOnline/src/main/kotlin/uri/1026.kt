@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 fun main(args: Array<String>) {
     while (true) {
@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
             val (a, b) = input.trim().split(' ').map { it.toInt() }
 
             println(a xor b)
-        } catch (e: Exception) {
+        } catch (_: Exception) {
             break
         }
     }

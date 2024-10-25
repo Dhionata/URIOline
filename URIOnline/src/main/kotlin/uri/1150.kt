@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import java.util.Scanner
 
@@ -18,8 +18,7 @@ fun main(args: Array<String>) {
         if (x > z) break
     }
     println(aux)
-}
-/*
+}/*
 Faça um programa que leia dois
 inteiros: X e Z (devem ser lidos
 tantos valores para Z quantos

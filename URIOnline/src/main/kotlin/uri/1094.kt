@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import java.util.*
 
@@ -17,7 +17,7 @@ fun main() {
     val input = Scanner(System.`in`)
     n = input.nextInt()
 
-    for (i in 1..n) {
+    (1..n).forEach { i ->
         x = input.nextInt()
         animalCaracter = input.next()
         total += x

@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import java.util.*
 
@@ -14,7 +14,7 @@ fun main() {
              println("Caso $aux: $n numeros")
          }*/
         for (i in 0..n) {
-            for (j in 0 until i) {
+            (0 until i).forEach { j ->
                 lista.add(i)
                 print(lista[i - 1])
             }
@@ -92,4 +92,3 @@ Caso 3: 4 numeros
 Caso 4: 7 numeros
 
 0 1 2 2 3 3 3*/
-

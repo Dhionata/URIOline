@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 fun main() {
     val x = (readLine() ?: return).toInt()
@@ -44,6 +44,3 @@ Sample Input	Sample Output
 12
 13
 17*/
-
-
-

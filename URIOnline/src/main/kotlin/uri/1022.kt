@@ -1,10 +1,9 @@
-package br.com.uri
+package uri
 
 import java.util.*
 
 fun main() {
     val scan = Scanner(System.`in`)
-    val n: Int
     var n1: Int
     var d1: Int
     var n2: Int
@@ -14,8 +13,8 @@ fun main() {
     var ns: Int
     var ds: Int
     var aux: String
-    n = scan.nextInt()
-    for (i in 1..n) {
+    val n: Int = scan.nextInt()
+    (1..n).forEach { i ->
         n1 = scan.nextInt()
         scan.next()
         d1 = scan.nextInt()

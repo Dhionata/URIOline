@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import java.util.*
 
@@ -36,7 +36,6 @@ fun main(args: Array<String>) {
 
     println("O JOGO DUROU $horasTotais HORA(S) E $minutosTotais MINUTO(S)")
 }
-
 
 
 /*Leia a hora inicial, minuto inicial, hora final e minuto final de um jogo. A seguir calcule a duração do jogo.

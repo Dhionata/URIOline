@@ -1,8 +1,8 @@
-package br.com.uri
+package uri
 
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
     val entrada = Scanner(System.`in`)
     val vetor = Array(12) { DoubleArray(12) }
     val operacao = entrada.next()

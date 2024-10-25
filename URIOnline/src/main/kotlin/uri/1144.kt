@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import kotlin.math.pow
 

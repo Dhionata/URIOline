@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import kotlin.math.pow
 import kotlin.math.sqrt
@@ -68,4 +68,3 @@ S
 N
 N
 S*/
-

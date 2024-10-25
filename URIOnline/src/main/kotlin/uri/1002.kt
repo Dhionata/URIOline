@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 import java.util.Scanner
 import kotlin.math.pow

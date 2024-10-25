@@ -1,4 +1,4 @@
-package br.com.uri
+package uri
 
 fun main(args: Array<String>) {
     val matriz = Array(12) { DoubleArray(12) }

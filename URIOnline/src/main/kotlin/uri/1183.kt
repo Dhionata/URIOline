@@ -1,13 +1,14 @@
-package br.com.uri
+package uri
 
 fun main(args: Array<String>) {
     val matriz = Array(12) { DoubleArray(12) }
     val operacao = readLine()
     var soma = 0.0
+
     for (linha in 0 until matriz.size - 1) {
-        for (coluna in matriz.indices) {
+        for (coluna in 0 until matriz.size - 1) {
             matriz[linha][coluna] = readLine()!!.toDouble()
-            if (coluna > linha) {
+            if (coluna >= linha) {
                 soma += matriz[linha][coluna]
             }
         }
